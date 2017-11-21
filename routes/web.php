@@ -16,7 +16,7 @@ Route::get('/','PagesController@root')->name('root');
 
 Route::resource('users','UsersController',['only'=>['show','update','edit']]);
 
-
+Route::resource('categories', 'CategoriesController', ['only' => ['show']]);
 
 //Auth::routes();
 // Authentication Routes...
